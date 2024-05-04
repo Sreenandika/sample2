@@ -27,3 +27,6 @@ def profile_list(request):
 def profile_view(request, profile_id):
     profile=Profile.objects.get(id=profile_id)
     return render(request,'profile_view.html',{'profile':profile})
+
+def sample():
+    pass
