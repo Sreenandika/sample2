@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>PROFILE LIST</h3>
+
+    {% for profile in profiles %}
+    <a href="{% url 'profile_view' profile.id %}">{{ profile.name}}
+        {{profile.id}}
+        </a>
+        <br>
+        <hr>
+    {% endfor %}
+</body>
+</html>
